@@ -1,0 +1,17 @@
+
+{
+  "name": "Mocha",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "request": "^2.65.0",
+    "mocha": "~3.2.0"
+  },
+
+  "author": "Kaj Arne Ruiter",
+  "license": ""
+}
