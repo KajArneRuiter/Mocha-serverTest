@@ -1,6 +1,3 @@
-/**
- * Created by Supreme_Kaj on 8-3-2017.
- */
 
 var http = require('http');
 var string = "Hello, Information Engineers!";
@@ -18,17 +15,20 @@ var errorServer = http.createServer(function(req, res) {
 
 });
 
-// listen starts the server on the given port.
+
 exports.listen = function(port) {
     console.log('HTTP on: ' + port);
     server.listen(port);
 };
 
-// close destroys the server.
+
 exports.close = function() {
     console.log('server closed');
     server.close();
 };
+
+
+
 
 exports.errorListen = function(port){
     console.log('Error on: ' + port);

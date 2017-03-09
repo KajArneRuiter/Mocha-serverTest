@@ -1,6 +1,7 @@
-/**
- * Created by Supreme_Kaj on 8-3-2017.
- */
+
+// basis testen van functies in het bestand app/calculator.js
+
+
 
 var assert = require('assert');
 

@@ -1,6 +1,5 @@
-/**
- * Created by Supreme_Kaj on 8-3-2017.
- */
+
+// een paar basis functies die gestest kunnen worden
 
 
 exports.add = function(i, j) {

@@ -1,7 +1,3 @@
-/**
- * Created by Supreme_Kaj on 8-3-2017.
- */
-
 
 var http = require('http');
 var assert = require('assert');
@@ -11,22 +7,18 @@ var server = require('../app/server.js');
 var port = 8989;
 var errorPort = 1337;
 
-exports.servertest =
-
-
-
 
 describe('HTTP Server Test', function() {
 
     before(function() {
         server.listen(port);
-        server.errorListen(errorPort);
+        // error start zelf invullen
     });
 
 
     after(function() {
         server.close();
-        server.errorClose();
+        // error close zelf invullen
     });
 
     describe('HTTP test', function() {
@@ -52,22 +44,9 @@ describe('HTTP Server Test', function() {
 
     });
 
-    describe('Error Test', function() {
-
-        it('should be Error 404 like page', function(done) {
-
-            http.get('http://127.0.0.1:1337', function(response) {
-                // Assert the status code.
-                assert.equal(response.statusCode, 404);
-
-                done();
-
-                });
-
-            });
-
-        });
-
 
 
 });
+
+
+// schrijf zelf binnen de test hierboven een server Error test kijk naar het voorbeeld hierboven en denk na dat je alleen maar de error hoeft te testen
